@@ -1,0 +1,14 @@
+<div class="sidebar-widget widget_search">
+  <form action="//google.com/search" id="searchform" method="get" name="searchform">
+    <div class="input-group">
+      <!-- <input class="form-control" name="s" placeholder="Search" type="text" value=""> -->
+      <input type="search" name="q" results="0" class="form-control" placeholder="Search">
+      <input type="hidden" name="q" value="site:{{ .Site.BaseURL }}">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="submit" value="Search">
+            <i class="fa fa-search"></i>
+          </button>
+        </span>
+    </div>
+  </form>
+</div>

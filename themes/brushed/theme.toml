@@ -1,0 +1,20 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+name = "Brushed"
+license = "MIT"
+licenselink = "https://github.com/yourname/brushed/blob/master/LICENSE.md"
+description = ""
+homepage = "http://siteforthistheme.com/"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.15
+
+[author]
+  name = "Jorge Paredes"
+  homepage = "jsparedes.github.io"
+
+# If porting an existing theme
+[original]
+  name = "Alessio Atzeni"
+  homepage = "www.alessioatzeni.com/"
+  repo = ""

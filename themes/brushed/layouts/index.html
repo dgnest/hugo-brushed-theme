@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+{{ partial "head.html" . }}
+
+<body>
+
+    <!-- This section is for Splash Screen -->
+    <div class="ole">
+        <section id="jSplash">
+            <div id="circle"></div>
+        </section>
+    </div>
+    <!-- End of Splash Screen -->
+
+    {{ partial "slider.html" . }} {{ partial "nav.html" . }}
+
+    {{ partial "portfolio.html" . }}
+
+    {{ partial "about.html" . }}
+
+    {{ partial "blog_section.html" . }}
+
+    {{ partial "contact.html" . }}
+
+    <!-- End Contact Section -->
+
+    <!-- Twitter Feed -->
+    <div id="twitter-feed" class="page-alternate">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="follow">
+                        <a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><i class="font-icon-social-twitter"></i></a>
+                    </div>
+
+                    <div id="ticker" class="query">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Twitter Feed -->
+
+    {{ partial "social_networks.html" . }}
+
+
+    {{ partial "footer.html" . }}
+    {{ partial "backtop.html" . }}
+
+    {{ partial "scripts.html" . }}
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<div id="blog" class="page">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h2 class="title">Blog & Publications</h2>
+                <h3 class="title-description">Recent entries </h3>
+            </div>
+        </div>
+
+        <div class="row">
+
+            {{ range first 3 (where .Site.Pages "Type" "post") }}
+            <div class="span3">
+
+                <div class="post-icon">
+                    <a href="{{ .Permalink }}">
+                        {{ if isset .Params "banner" }}
+                          <img src="{{ .Site.BaseURL}}/{{ .Params.banner }}" class="attachment-thumbnail" alt="" width="100%">
+                        {{ else }}
+                          <img src="{{ .Site.BaseURL}}/img/placeholder.png" class="attachment-thumbnail" alt="" width="100%">
+                        {{ end }}
+                      </a>
+                </div>
+                <div class="name same-height-always">
+                    <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                </div>
+            </div>
+            {{ end }}
+
+
+            <div class="span3">
+                <h3 class="sidebar-header">Categories</h3>
+                <ul>
+                    {{ range $name, $items := .Site.Taxonomies.categories }}
+                    <li><a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize | lower }}">{{ $name }} ({{ len $items }})</a>
+                    </li>
+                    {{ end }}
+                </ul>
+
+                <div class="sidebar-widget widget_tag_cloud">
+                    <h3 class="sidebar-header">Tags</h3>
+                    <div class="tagcloud">
+                        <ul>
+                            {{ range $name, $items := .Site.Taxonomies.tags }}
+                            <li><a href="{{ $.Site.BaseURL }}tags/{{ $name | urlize | lower }}"><i class="fa fa-tags"></i> {{ $name }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+          <a href="{{ .Site.BaseURL}}/post/">Explore all posts</a>
+        </div>
+    </div>
+</div>

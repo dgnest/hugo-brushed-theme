@@ -1,0 +1,9 @@
+<div class="sidebar-widget widget_categories" id="categories-5">
+  <h3 class="sidebar-header">Categories</h3>
+  <ul>
+    {{ range $name, $items := .Site.Taxonomies.categories }}
+    <li><a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize | lower }}">{{ $name }} ({{ len $items }})</a>
+    </li>
+    {{ end }}
+  </ul>
+</div>

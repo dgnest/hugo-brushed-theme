@@ -1,0 +1,68 @@
+baseurl = "http://jparedes"
+languageCode = "en-us"
+title = "Brushed | Responsive One Page Template"
+theme = "brushed"
+paginate = 10
+# SectionPagesMenu = "main"
+
+[params]
+  # author = "jparedes"
+  # logo = "nanobusiness_logo.png"
+  # selo = "selo.png"
+  [params.contact]
+      email = "hello@brushed.com"
+      phone = "(916) 375-2525"
+      company = "Brushed Studio"
+      address = "5240 Vanish Island. 105"
+      city = "Unknow"
+  [params.social]
+      twitter = "https://twitter.com/Bluxart"
+      dribbble = "http://dribbble.com/Bluxart"
+      forrst = "http://forrst.com/people/Bluxart"
+      behance = "http://www.behance.net/alessioatzeni"
+      facebook = "https://www.facebook.com/Bluxart"
+      googleplus = "https://plus.google.com/105500420878314068694"
+      linkedin = "http://www.linkedin.com/in/alessioatzeni"
+      themeforest = "http://themeforest.net/user/Bluxart"
+      zerply = "http://zerply.com/Bluxart/public"
+
+[[menu.main]]
+  name = "home"
+  weight = 1
+  url  = "/"
+
+[[menu.main]]
+  name = "portfolio"
+  weight = 2
+  # identifier = "solutions"
+  url  = "#work"
+
+[[menu.main]]
+  name = "about us"
+  url  = "#about"
+  weight = 3
+  # identifier = "pdp"
+
+[[menu.main]]
+  name = "blog"
+  url  = "#blog"
+  weight = 4
+  # identifier = "post"
+
+[[menu.main]]
+  name = "contact"
+  weight = 5
+  url  = "#contact"
+  # identifier = "innovation"
+
+
+[[menu.blog]]
+  name = "contact"
+  weight = 4
+  # identifier = "innovation"
+  url  = "/contact/"
+
+[[menu.blog]]
+  name = "blog"
+  url  = "/blog/"
+  weight = 5

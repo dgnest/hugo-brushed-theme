@@ -1,0 +1,18 @@
+name: Joshua Insanus
+function: Lead Designer
+img_profile: profile-03.jpg
+description: >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Maecenas ac augue at erat [hendrerit dictum](http://example.com).
+  Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus,
+  id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora
+  torquent per conubia nostra, per inceptos himenaeos.
+social_networks:
+  - title: twitter
+    url: https://twitter.com/#
+  - title: linkedin
+    url: https://linkedin.com/#
+  - title: google-plus
+    url: https://plus.google.com/#
+  - title: vimeo
+    url: https://vimeo.com/#

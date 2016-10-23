@@ -1,0 +1,45 @@
+<!-- About Section -->
+<div id="about" class="page-alternate">
+    <div class="container">
+        <!-- Title Page -->
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">About Us</h2>
+                    <h3 class="title-description">Learn About our Team &amp; Culture.</h3>
+                </div>
+            </div>
+        </div>
+        <!-- End Title Page -->
+
+        <!-- People -->
+        <div class="row">
+
+            {{ range .Site.Data.people}}
+            <!-- Start Profile -->
+            <div class="span4 profile">
+                <div class="image-wrap">
+                    <div class="hover-wrap">
+                        <span class="overlay-img"></span>
+                        <span class="overlay-text-thumb">{{ .function }}</span>
+                    </div>
+                    <img src="{{ .Site.BaseURL }}img/profile/{{ .img_profile }}" alt="{{ .name }}">
+                </div>
+                <h3 class="profile-name">{{ .name }}</h3>
+                <p class="profile-description">{{ .description | markdownify }}</p>
+
+                <div class="social">
+                    <ul class="social-icons">
+                        {{ range .social_networks }}
+                        <li><a href="{{ .url }}"><i class="font-icon-social-{{ .title }}"></i></a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+            <!-- End Profile -->
+            {{ end }}
+        </div>
+        <!-- End People -->
+    </div>
+</div>
+<!-- End About Section -->

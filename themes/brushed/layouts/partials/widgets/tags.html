@@ -1,0 +1,11 @@
+<div class="sidebar-widget widget_tag_cloud">
+  <h3 class="sidebar-header">Tags</h3>
+  <div class="tagcloud">
+    <ul>
+        {{ range $name, $items := .Site.Taxonomies.tags }}
+        <li><a href="{{ $.Site.BaseURL }}tags/{{ $name | urlize | lower }}"><i class="fa fa-tags"></i> {{ $name }}</a>
+        </li>
+        {{ end }}
+    </ul>
+  </div>
+</div>
