@@ -28,3 +28,9 @@ the fall of Troy.
 
 {{< alert type="alert-success"
     text="Odysseus solved (with help of Athena) a possible revenge planned by the families of the Suitors." >}}
+
+### Quotes
+
+{{< blockquote text="Tell me, muse, of the man of many resources who wandered far and wide after he had sacked the holy city of Troy, and he saw the cities and learned the thoughts of many men." author="Homer" >}}
+
+{{< blockquote text="My name is Nobody." author="Odysseus, The Odyssey" >}}
