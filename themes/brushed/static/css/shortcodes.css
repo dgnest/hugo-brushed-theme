@@ -18,7 +18,7 @@
   	font-size: 16px;
   	cursor: pointer;
 	border:none;
-  
+
 	-webkit-transition: all 0.1s linear;
        -moz-transition: all 0.1s linear;
          -o-transition: all 0.1s linear;
@@ -56,11 +56,11 @@
 .button.button-block {
 	padding-right: 0;
 	padding-left: 0;
-	width: 100%;	
+	width: 100%;
 }
 
 .button + .button {
-	margin-left: 10px;	
+	margin-left: 10px;
 }
 
 /* ==================================================
@@ -92,7 +92,7 @@
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
-	
+
 	-webkit-transition: all 0.1s linear 0s;
 	-moz-transition: all 0.1s linear 0s;
 	-ms-transition: all 0.1s linear 0s;
@@ -127,7 +127,7 @@
     margin: -8px 0 0 0;
     color: #23262C;
     font-size: 18px;
-	
+
 	-webkit-transition: all 0.1s linear 0s;
 	-moz-transition: all 0.1s linear 0s;
 	-ms-transition: all 0.1s linear 0s;
@@ -141,7 +141,7 @@
 
 .accordion-heading .accordion-toggle.active span,
 .accordion-heading:hover .accordion-toggle.inactive span {
-	color: #FFFFFF;	
+	color: #FFFFFF;
 }
 
 .accordion-heading.accordionize .accordion-toggle.active span,
@@ -203,9 +203,9 @@
   	top: 2px;
   	right: -22px;
   	line-height: 20px;
-	color: #FFFFFF;	
+	color: #FFFFFF;
 	text-shadow: none;
-	
+
 	-webkit-transition: opacity 0.1s linear 0s;
 	-moz-transition: opacity 0.1s linear 0s;
 	-ms-transition: opacity 0.1s linear 0s;
@@ -214,7 +214,7 @@
 }
 
 .alert .close:hover {
-	opacity: 1;	
+	opacity: 1;
 }
 
 .alert-standard {
@@ -225,7 +225,10 @@
   	background-color: #1F7F5C;
 }
 
-.alert-danger,
+.alert-danger {
+  	background-color: #ed332e;
+}
+
 .alert-error {
   	background-color: #E56C69;
 }
@@ -496,7 +499,7 @@ blockquote small:before {
 }
 
 .info-block p {
-	margin-bottom: 0;	
+	margin-bottom: 0;
 }
 
 .info-block a.button {
@@ -553,17 +556,17 @@ blockquote small:before {
 	height: 70px;
 
 	background: #26292E;
-	
-	-webkit-transition: all 400ms ease-out 0s;	
+
+	-webkit-transition: all 400ms ease-out 0s;
 	   -moz-transition: all 400ms ease-out 0s;
 		 -o-transition: all 400ms ease-out 0s;
 		    transition: all 400ms ease-out 0s;
-		  
+
 	-webkit-transform: rotateY(0deg);
 	   -moz-transform: rotateY(0deg);
 		-ms-transform: rotateY(0deg);
 		 -o-transform: rotateY(0deg);
-			transform: rotateY(0deg);	
+			transform: rotateY(0deg);
 }
 
 .icons-example ul li a span {
@@ -572,15 +575,15 @@ blockquote small:before {
 	color: #55606a;
 	font-size: 32px;
 	line-height: 70px;
-	
+
 	opacity: 0.3;
 	filter: alpha(opacity=30);
-	
-	-webkit-transition: all 400ms ease-out 0s;	
+
+	-webkit-transition: all 400ms ease-out 0s;
 	   -moz-transition: all 400ms ease-out 0s;
 		 -o-transition: all 400ms ease-out 0s;
 		    transition: all 400ms ease-out 0s;
-		  
+
 	-webkit-transform: rotateY(0deg);
 	   -moz-transform: rotateY(0deg);
 		-ms-transform: rotateY(0deg);
@@ -590,8 +593,8 @@ blockquote small:before {
 
 .icons-example ul li:hover a,
 .icons-example ul li.active a {
-	background-color: #DE5E60;	
-	
+	background-color: #DE5E60;
+
 	-webkit-transform: rotateY(180deg);
 	   -moz-transform: rotateY(180deg);
 		-ms-transform: rotateY(180deg);
@@ -604,7 +607,7 @@ blockquote small:before {
 	color: #FFFFFF;
 	opacity: 1;
 	filter: alpha(opacity=100);
-	
+
 	-webkit-transform: rotateY(180deg);
 	   -moz-transform: rotateY(180deg);
 		-ms-transform: rotateY(180deg);

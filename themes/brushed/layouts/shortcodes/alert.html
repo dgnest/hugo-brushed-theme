@@ -1,0 +1,12 @@
+<div class="alert {{ .Get "type" }} fade in">
+    {{ with .Get "url" }}
+    <a class="close" data-dismiss="alert" target="_blank" href="{{.}}">
+      <span class="font-icon-signout"></span> </a>
+    {{ end }}
+
+    {{ with .Get "subtitle" }}
+    <h4>{{.}}</h4>
+    {{ end }}
+
+    <strong>{{ .Get "strong" }}</strong> {{ .Get "text" }}.
+</div>
