@@ -11,6 +11,8 @@ the fall of Troy.
 {{< imgcap title="Odysseus between Scylla and the giant whirlpool Charybdis"
  src="http://www.gods-and-monsters.com/images/scylla-greek-mythology-monster.jpg" >}}
 
+### Alerts
+
 {{< alert type="" text="The Odyssey is a sequel to the Iliad." >}}
 
 {{< alert type="alert-standard" text="Odysseus had problems with the God of the Sea: Poseidon." >}}
@@ -34,3 +36,7 @@ the fall of Troy.
 {{< blockquote text="Tell me, muse, of the man of many resources who wandered far and wide after he had sacked the holy city of Troy, and he saw the cities and learned the thoughts of many men." author="Homer" >}}
 
 {{< blockquote text="My name is Nobody." author="Odysseus, The Odyssey" >}}
+
+### Tooltip
+
+Odysseus and his men head for the {{< tooltip text="Underworld" extrainfo="the dark counterpart to the brightness of Mount Olympus" >}}. Eventually he find {{< tooltip text="Tiresias" extrainfo="a blind prophet of Apollo" url="https://en.wikipedia.org/wiki/Tiresias">}} tell Odysseus how to get home. As Odysseus is about to leave the Underworld he notices his moms spirit. He talks to her for a while to find out how she died and why. He then heads off to continue his journey.

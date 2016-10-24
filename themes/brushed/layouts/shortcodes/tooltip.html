@@ -1,0 +1,2 @@
+<a {{ with .Get "url" }} target="_blank" href="{{ . }}" {{ end }}
+data-toggle="tooltip" title="{{ .Get "extrainfo" }}">{{ .Get "text" }}</a>
