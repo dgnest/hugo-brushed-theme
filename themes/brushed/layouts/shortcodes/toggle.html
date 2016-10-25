@@ -1,0 +1,22 @@
+{{ $id_accordion := delimit (slice "toggleArea" (.Get "id")) "" }}
+{{ $filepath := index .Site.Data.toggles (.Get "file") }}
+{{ $items := index $filepath "mytoggle" }}
+<div class="accordion" id="toggleArea{{ .Get "id" }}">
+  {{ range $index, $element := $items }}
+    <div class="accordion-group">
+      <div class="accordion-heading togglize">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#"
+           href="#{{ delimit (slice $id_accordion $index) "" }}">
+          {{ .head }}
+          <span class="font-icon-plus"></span>
+          <span class="font-icon-minus"></span>
+        </a>
+      </div>
+      <div id="{{ delimit (slice $id_accordion $index) "" }}" class="accordion-body collapse">
+        <div class="accordion-inner">
+          {{ .description | markdownify }}
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>

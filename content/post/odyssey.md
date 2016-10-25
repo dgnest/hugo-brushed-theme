@@ -48,3 +48,9 @@ The family of Odysseus is:
 
 Some of the principal suitors:
 {{< accordion file="Suitors" id="121">}}
+
+### Toggle
+
+Some servants of Odysseus
+
+{{< toggle file="servants" id="125">}}
