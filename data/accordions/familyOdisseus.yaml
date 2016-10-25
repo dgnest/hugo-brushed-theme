@@ -1,0 +1,17 @@
+myaccordion:
+  - head: Penelope
+    description: |
+        She was the wife of Odysseus. She was faithful to his husband while he is absent,
+        despite having many suitors.
+  - head: Telemachus
+    description: |
+        Son of Odysseus and Penelope. He was born just before Odysseus was called
+        to fight in the Trojan War.
+        Telemachus decided to get news about his father. For this reason, he visited the following greek heroes:
+
+          * [Nestor](https://en.wikipedia.org/wiki/Nestor_(mythology))
+          * [Menelaus](https://en.wikipedia.org/wiki/Menelaus)
+
+  - head: Laertes
+    description: |
+        He was the father of [Odysseus](https://en.wikipedia.org/wiki/Odysseus). He had trained Odysseus in husbandry."

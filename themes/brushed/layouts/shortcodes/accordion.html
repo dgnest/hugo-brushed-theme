@@ -1,0 +1,21 @@
+{{ $id_accordion := delimit (slice "accordionArea" (.Get "id")) "" }}
+{{ $filepath := index .Site.Data.accordions (.Get "file") }}
+{{ $items := index $filepath "myaccordion" }}
+<div class="accordion" id="{{ $id_accordion }}">
+  {{ range $index, $element := $items }}
+    <div class="accordion-group">
+      <div class="accordion-heading accordionize">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{ $id_accordion }}"
+           href="#{{ delimit (slice $id_accordion $index) "" }}">
+          {{ .head }}
+          <span class="font-icon-arrow-simple-down"></span>
+        </a>
+      </div>
+      <div id="{{ delimit (slice $id_accordion $index) "" }}" class="accordion-body collapse">
+        <div class="accordion-inner">
+          {{ .description | markdownify }}
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>
