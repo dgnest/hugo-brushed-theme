@@ -26,7 +26,7 @@ the fall of Troy.
 
 {{< alert type="alert-block alert-danger" subtitle="Slaying of the Suitors"
  text="With help of Athena, Odysseus, Telemachus, Eumaeus, and Philoteus killed all the Suitors."
- url= "http://www.maicar.com/GML/SUITORSPENELOPE.html">}}
+ url= "http://www.maicar.com/GML/SUITORSPENELOPE.html" >}}
 
 {{< alert type="alert-success"
     text="Odysseus solved (with help of Athena) a possible revenge planned by the families of the Suitors." >}}
@@ -39,18 +39,24 @@ the fall of Troy.
 
 ### Tooltip
 
-Odysseus and his men head for the {{< tooltip text="Underworld" extrainfo="the dark counterpart to the brightness of Mount Olympus" >}}. Eventually he find {{< tooltip text="Tiresias" extrainfo="a blind prophet of Apollo" url="https://en.wikipedia.org/wiki/Tiresias">}} tell Odysseus how to get home. As Odysseus is about to leave the Underworld he notices his moms spirit. He talks to her for a while to find out how she died and why. He then heads off to continue his journey.
+Odysseus and his men head for the {{< tooltip text="Underworld" extrainfo="the dark counterpart to the brightness of Mount Olympus" >}}. Eventually he find {{< tooltip text="Tiresias" extrainfo="a blind prophet of Apollo" url="https://en.wikipedia.org/wiki/Tiresias" >}} tell Odysseus how to get home. As Odysseus is about to leave the Underworld he notices his moms spirit. He talks to her for a while to find out how she died and why. He then heads off to continue his journey.
 
 ### Accordions
 
 The family of Odysseus is:
-{{< accordion file="familyOdisseus" id="120">}}
+{{< accordion file="familyOdisseus" id="120" >}}
 
 Some of the principal suitors:
-{{< accordion file="Suitors" id="121">}}
+{{< accordion file="Suitors" id="121" >}}
 
 ### Toggle
 
 Some servants of Odysseus
 
-{{< toggle file="servants" id="125">}}
+{{< toggle file="servants" id="125" >}}
+
+### Tabs
+
+Some characters in the Odyssey:
+
+{{< tabs file="characters" id="125" >}}

@@ -1,0 +1,22 @@
+{{ $id_tabs := delimit (slice "tabsArea" (.Get "id")) "" }}
+{{ $filepath := index .Site.Data.tabs (.Get "file") }}
+{{ $items := index $filepath "mytabs" }}
+<div class="tabbable">
+
+    <ul class="nav nav-tabs" id="{{ $id_tabs }}">
+        {{ range $index, $element := $items }}
+        <li {{ if eq $index 0 }} class="active" {{ end }} >
+          <a href="#tab{{ $index }}" data-toggle="tab"> {{ .head }} </a>
+        </li>
+        {{ end }}
+    </ul>
+
+    <div class="tab-content">
+        {{ range $index, $element := $items }}
+        <div class="tab-pane fade in{{ if eq $index 0 }} active{{ end }}" id="tab{{ $index }}">
+            {{ .description }}
+        </div>
+        {{ end }}
+    </div>
+
+</div>

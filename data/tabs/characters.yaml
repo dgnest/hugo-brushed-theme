@@ -1,0 +1,12 @@
+mytabs:
+  - head: Circe
+    description: |
+        Odysseus rescued his crew from this sorceress with help of Hermes.
+  - head: Calypso
+    description: |
+        A nymph who lived on the island of Ogygia, where she detained Odysseus
+        for 7 years (According to Homer).
+  - head: Nausicaa
+    description: |
+        Daughter of Alcinous, King of Phaeacians. Finally, Odysseus obtained help
+        to return to Ithaca.
