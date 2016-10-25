@@ -60,3 +60,13 @@ Some servants of Odysseus
 Some characters in the Odyssey:
 
 {{< tabs file="characters" id="125" >}}
+
+### Information block
+
+{{< information_block title="Book" subtitle="The Odyssey"
+    text="[Robert Fagles](https://en.wikipedia.org/wiki/Robert_Fagles), winner of the PEN/Ralph Manheim Medal for Translation and a 1996 Academy Award in Literature from the American Academy of Arts and Letters, presents us with Homer's best-loved and most accessible poem in a stunning modern-verse translation."
+    url="https://www.amazon.com/Odyssey-Homer/dp/0140268863" msgbutton="Purchase" >}}
+
+
+<hr>
+##  Thank you for reading

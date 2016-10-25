@@ -1,0 +1,7 @@
+<div class="info-block">
+    <div class="info-text">
+        <h3><span class="color-text">{{ .Get "title" }}</span> {{ .Get "subtitle"}} </h3>
+        <p>{{ .Get "text" | markdownify }}</p>
+        <a class="button" target="_blank" href="{{ .Get "url"}}"> {{ .Get "msgbutton"}} </a>
+    </div>
+</div>
