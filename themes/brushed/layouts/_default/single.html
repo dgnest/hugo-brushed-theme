@@ -1,102 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {{ partial "head.html" . }}
+{{ partial "headpost.html" . }}
 
-  <body>
+<body>
 
-    <div id="all">
-
-        <header>
-
-          {{ partial "navblog.html" . }}
-
-        </header>
-
-
-        <div id="content" role="main">
-          <article>
-
-          <section class="section">
-            <div class="container">
-                <div class="row element-top-50 element-bottom-50">
-                    <!-- *** LEFT COLUMN *** -->
-                    <div class="span9" id="blog-listing-medium">
-
-                        <div class="post-media">
-                          <div class="figure fade-in text-center figcaption-middle">
-                            <a class="figure-image magnific" href="{{ .Site.BaseURL}}{{ .Params.banner }}">
-                              <img alt=" {{.Title}} " src="{{ .Site.BaseURL}}{{ .Params.banner }}">
-                              <div class="figure-overlay">
-                                <div class="figure-overlay-container">
-                                  <div class="figure-caption">
-                                    <span class="figure-overlay-icons">
-                                      <i class="icon-link"></i>
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-
-                        <header class="post-head small-screen-center">
-                          <h1 class="post-title"> {{.Title}} </h1>
-                            <div class="post-details">
-                              <span class="post-date">
-                                <i class="icon-clock"></i> {{ .Date.Format "January 2, 2006" }}
-                              </span>
-                              <span class="post-author">
-                                <i class="icon-head"></i>
-                                  <a href="#">{{ .Params.author }}</a>
-                              </span>
-                            </div>
-                        </header>
-
-                        <div class="post-body">
-                          {{ .Content }}
-                        </div>
-                        <!-- /#post-content -->
-                        {{ if .Site.DisqusShortname }}
-                        <div id="comments">
-                            {{ template "_internal/disqus.html" . }}
-                        </div>
-                        {{ end }}
-                    </div>
-                    <!-- /.col-md-9 -->
-
-                    <!-- *** LEFT COLUMN END *** -->
-
-                    <!-- *** RIGHT COLUMN ***
-       _________________________________________________________ -->
-
-                    <div class="span3">
-
-                        <!-- *** MENUS AND WIDGETS *** -->
-
-                          {{ partial "sidebar.html" . }}
-
-                        <!-- *** MENUS AND FILTERS END *** -->
-
-                    </div>
-                    <!-- /.col-md-3 -->
-
-                    <!-- *** RIGHT COLUMN END *** -->
-
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-            </section>
-            </article>
-        </div>
-        <!-- /#content -->
-
-        {{ partial "footer.html" . }}
-
+    <!-- This section is for Splash Screen -->
+    <div class="ole">
+        <section id="jSplash">
+            <div id="circle"></div>
+        </section>
     </div>
-    <!-- /#all -->
+    <!-- End of Splash Screen -->
+
+    {{ partial "navblog.html" . }}
+
+    <div id="content" class="page">
+        <div class="container">
+            <div class="row">
+                <!-- *** LEFT COLUMN *** -->
+                <div class="span9" id="blog-listing-medium">
+
+                    <div class="post-media">
+                        <div class="figure fade-in text-center figcaption-middle">
+                            <a class="figure-image magnific" href="{{ .Site.BaseURL}}{{ .Params.banner }}">
+                                <img alt=" {{.Title}} " src="{{ .Site.BaseURL}}{{ .Params.banner }}">
+                                <div class="figure-overlay">
+                                    <div class="figure-overlay-container">
+                                        <div class="figure-caption">
+                                            <span class="figure-overlay-icons">
+                                                      <i class="icon-link"></i>
+                                                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <header class="post-head small-screen-center">
+                        <h1 class="post-title"> {{.Title}} </h1>
+                        <div class="post-details">
+                            <span class="post-date">
+                                        <i class="icon-clock"></i> {{ .Date.Format "January 2, 2006" }}
+                                      </span>
+                            <span class="post-author">
+                                        <i class="icon-head"></i> <a href="#">{{ .Params.author }}</a>
+                                      </span>
+                        </div>
+                    </header>
+
+                    <div class="post-body">
+                        {{ .Content }}
+                    </div>
+                    <!-- /#post-content -->
+                    {{ if .Site.DisqusShortname }}
+                    <div id="comments">
+                        {{ template "_internal/disqus.html" . }}
+                    </div>
+                    {{ end }}
+                </div>
+                <!-- *** LEFT COLUMN END *** -->
+
+                <!-- *** RIGHT COLUMN *** -->
+                <div class="span3">
+                    {{ partial "sidebar.html" . }}
+                </div>
+                <!-- *** RIGHT COLUMN END *** -->
+            </div>
+        </div>
+    </div>
+    <!-- /#content -->
+
+    {{ partial "footer.html" . }} {{ partial "backtop.html" . }}
 
 
-  </body>
+</body>
+
 </html>
