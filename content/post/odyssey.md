@@ -1,7 +1,9 @@
 +++
-date = "2016-09-25T09:20:27-05:00"
-title = "The Odyssey"
-
+date = "2016-10-25T09:20:27-05:00"
+title = "Using shortcodes: The Odyssey"
+banner = "map_odyssey.jpg"
+tags = ["homer", "greek"]
+categories = ["lyric", "history"]
 +++
 
 It is a poem focuses in Odysseus (Greek hero) and his journey home after

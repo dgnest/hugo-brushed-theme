@@ -1,7 +1,8 @@
 +++
-date = "2016-09-27T09:10:37-05:00"
+date = "2016-09-30T09:10:37-05:00"
 title = "The Iliad"
-tags = ["homero", "grecia"]
+banner = "troy-soldiers.png"
+tags = ["homer", "greek"]
 categories = ["lyric", "history"]
 +++
 
@@ -15,7 +16,7 @@ de vencerlos al cercarlos en las orillas. Si bien esto, fue frenado en parte por
 de los mirmidones al manda de Patroclo con la armadura de Aquiles que confundio y
 atemorizo a los troyanos.
 
-{{< imgcap title="Ambiente de desarrollo" src="/img/01.jpg" >}}
+{{< imgcap title="Ambiente de desarrollo" src="/img/achilles_triumphant.jpg" >}}
 
 {{< imgcap title="Briseida a manos de Aquiles" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Carracci_Achille_et_Briseis.jpg" >}}
 <!-- ![Briseida](https://upload.wikimedia.org/wikipedia/commons/9/90/Carracci_Achille_et_Briseis.jpg) -->
