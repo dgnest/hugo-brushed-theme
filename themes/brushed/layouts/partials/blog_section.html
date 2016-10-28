@@ -11,22 +11,18 @@
 
             {{ range first 3 (where .Site.Pages "Type" "post") }}
             <div class="span3">
-
                 <div class="post-icon">
                     <a href="{{ .Permalink }}">
                         {{ if isset .Params "banner" }}
-                          <img src="{{ .Site.BaseURL}}/{{ .Params.banner }}" class="attachment-thumbnail" alt="" width="100%">
+                          <img src="{{ .Site.BaseURL}}img/banner/{{ .Params.banner }}" class="attachment-thumbnail" alt="" width="100%">
                         {{ else }}
-                          <img src="{{ .Site.BaseURL}}/img/placeholder.png" class="attachment-thumbnail" alt="" width="100%">
+                          <img src="{{ .Site.BaseURL}}img/placeholder.png" class="attachment-thumbnail" alt="" width="100%">
                         {{ end }}
                       </a>
                 </div>
-                <div class="name same-height-always">
-                    <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
-                </div>
+                <h5 class="text_align_center"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
             </div>
             {{ end }}
-
 
             <div class="span3">
                 <h3 class="sidebar-header">Categories</h3>
@@ -49,10 +45,13 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div class="row">
-          <a href="{{ .Site.BaseURL}}/post/">Explore all posts</a>
+          <div class="span9">
+              <h4 class="text_align_center"> <a href="{{ .Site.BaseURL }}post/" target="_blank"> Explore all posts </a> </h4>
+          </div>
         </div>
     </div>
 </div>
