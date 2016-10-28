@@ -18,25 +18,15 @@
     <div id="content" class="page">
         <div class="container">
             <div class="row">
+
+                <div class="span12 wrapper">
+                    <div class="banner" id="inner">
+                        <img class="banner-image"  alt=" {{.Title}} " src="{{ .Site.BaseURL}}img/banner/{{ .Params.banner }}">
+                    </div>
+                </div>
+
                 <!-- *** LEFT COLUMN *** -->
                 <div class="span9" id="blog-listing-medium">
-
-                    <div class="post-media">
-                        <div class="figure fade-in text-center figcaption-middle">
-                            <a class="figure-image magnific" href="{{ .Site.BaseURL}}{{ .Params.banner }}">
-                                <img alt=" {{.Title}} " src="{{ .Site.BaseURL}}{{ .Params.banner }}">
-                                <div class="figure-overlay">
-                                    <div class="figure-overlay-container">
-                                        <div class="figure-caption">
-                                            <span class="figure-overlay-icons">
-                                                      <i class="icon-link"></i>
-                                                    </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
 
                     <header class="post-head small-screen-center">
                         <h1 class="post-title"> {{.Title}} </h1>

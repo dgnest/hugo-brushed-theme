@@ -1,0 +1,23 @@
+.banner{
+  width: 100%;
+  display: block;
+}
+
+.banner > .banner-image{
+  width: 100%;
+  display: block;
+}
+
+.wrapper {
+   	position: relative;
+   	height: 280px;
+   	overflow: hidden;
+   	width: 100%;
+}
+
+#inner{
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+    padding-right: 15px;
+}
