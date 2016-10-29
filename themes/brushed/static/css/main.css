@@ -713,6 +713,7 @@ nav#menu #menu-nav li a:hover {
 
 .item-thumbs a + img {
 	width: 100%;
+	min-height: 200px;
 }
 
 .item-thumbs .hover-wrap {

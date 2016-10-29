@@ -2,30 +2,49 @@
     <div class="container">
         <div class="row">
             <div class="span12">
+              <div class="title-page">
                 <h2 class="title">Blog & Publications</h2>
                 <h3 class="title-description">Recent entries </h3>
+              </div>
             </div>
         </div>
 
+
         <div class="row">
 
-            {{ range first 3 (where .Site.Pages "Type" "post") }}
-            <div class="span3">
-                <div class="post-icon">
-                    <a href="{{ .Permalink }}">
-                        {{ if isset .Params "banner" }}
-                          <img src="{{ .Site.BaseURL}}img/banner/{{ .Params.banner }}" class="attachment-thumbnail" alt="" width="100%">
-                        {{ else }}
-                          <img src="{{ .Site.BaseURL}}img/placeholder.png" class="attachment-thumbnail" alt="" width="100%">
-                        {{ end }}
-                      </a>
+            <div class="span9">
+                <div class="row">
+                    <section id="recentposts">
+                        <ul id="thumbs">
+                            {{ range first 3 (where .Site.Pages "Type" "post") }}
+                            <div class="span3">
+                                <li class="item-thumbs">
+                                    <a class="hover-wrap fancybox" data-fancybox-group="recent" href="{{ .Site.BaseURL}}img/banner/{{ .Params.banner }}" title="{{ .Title }}">
+                                        <span class="overlay-img"></span>
+                                        <span class="overlay-img-thumb font-icon-zoom-in"></span>
+                                    </a>
+                                    <img src="{{ .Site.BaseURL}}img/banner/{{ .Params.banner }}" alt="{{ .Summary }}">
+                                </li>
+
+                                <h5 class="text_align_center"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                            </div>
+                            {{ end }}
+                        </ul>
+                    </section>
                 </div>
-                <h5 class="text_align_center"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+
+                <div class="row">
+                    <div class="span9" style="background:rgb(228, 170, 57)">
+                        <h4 class="text_align_center"> <a href="{{ .Site.BaseURL }}post/" target="_blank"> Explore all posts </a> </h4>
+                    </div>
+                </div>
+
             </div>
-            {{ end }}
+
+
 
             <div class="span3">
-                <h3 class="sidebar-header">Categories</h3>
+                <h3 class="font-icon-layer"> Categories</h3>
                 <ul>
                     {{ range $name, $items := .Site.Taxonomies.categories }}
                     <li><a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize | lower }}">{{ $name }} ({{ len $items }})</a>
@@ -34,7 +53,7 @@
                 </ul>
 
                 <div class="sidebar-widget widget_tag_cloud">
-                    <h3 class="sidebar-header">Tags</h3>
+                    <h3 class="font-icon-tags"> Tags</h3>
                     <div class="tagcloud">
                         <ul>
                             {{ range $name, $items := .Site.Taxonomies.tags }}
@@ -48,10 +67,6 @@
 
         </div>
 
-        <div class="row">
-          <div class="span9">
-              <h4 class="text_align_center"> <a href="{{ .Site.BaseURL }}post/" target="_blank"> Explore all posts </a> </h4>
-          </div>
-        </div>
+
     </div>
 </div>
