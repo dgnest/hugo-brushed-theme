@@ -37,17 +37,17 @@ paginate = 10
   # identifier = "solutions"
   url  = "#work"
 
+  [[menu.main]]
+    name = "blog"
+    url  = "#blog"
+    weight = 3
+    # identifier = "post"
+
 [[menu.main]]
   name = "about us"
   url  = "#about"
-  weight = 3
-  # identifier = "pdp"
-
-[[menu.main]]
-  name = "blog"
-  url  = "#blog"
   weight = 4
-  # identifier = "post"
+  # identifier = "pdp"
 
 [[menu.main]]
   name = "contact"
