@@ -9,6 +9,7 @@ categories = ["lyric", "history"]
 Poema épico escrito por Homero, que narra los últimos dias de los 10 años que
 duro el asedio asedio de la *impregnable* Troya por los aqueos (griegos).
 <!--more-->
+
 Iniciase el relato con la cólera del héroe griego Aquiles, originada por la
 disputa de  Briseida con el rey Agamenón, lider de los aqueos. Cólera que resulto funesta
 para los griegos en el devenir de las batallas, incluso el príncipe Hector estuvo cerca
